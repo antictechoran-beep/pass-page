@@ -452,7 +452,7 @@ async function submitOrder(){
     action:'addOrder',
     row:{
       'Date': now,
-      'ID': nom,
+      'ID': new Date().toLocaleString('sv',{timeZone:'Africa/Algiers'}).replace(/[-: ]/g,'').slice(0,14),
       'Client': nom,
       'Téléphone': tel,
       'Wilaya': wilaya,
